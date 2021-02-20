@@ -8,8 +8,8 @@ import { AccueilleService } from '../services/accueille.service';
 
 })
 export class HeadAccueilleComponent implements OnInit {
+  connect: String ="assets/images/connectionVrai2.png"
   constructor(private accueilleService:AccueilleService) { }
-
   ngOnInit(): void {
      this.accueilleService.mark  }
 
