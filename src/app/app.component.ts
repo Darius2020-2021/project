@@ -26,6 +26,10 @@ export class AppComponent {
     this.reponGlobal=this.num1/this.num2
 
   }
-
+  rebout(){
+    this.num1=0
+    this.num2=0
+    this.reponGlobal=0
+  }
 
 }
