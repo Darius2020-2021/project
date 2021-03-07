@@ -1,20 +1,27 @@
-<ion-header [translucent]="true">
+<ion-header id="title" class="text-center">
   <ion-toolbar>
     <ion-title>
-      Blank
+      MathCalcultor
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <div id="text" class="fs=2 text-center ">Veillez taper les données</div>
+  <div class="text-center">
+    <input id="inpu1" type="number" [(ngModel)]="num1">
+  <input id="inpu2" type="number" [(ngModel)]="num2">
+  </div>
+  <div>
+    <div id="result"class="text-center fs=3"> 
+      Résultat: <br/>
+      {{reponGlobal}}
+    </div>
+  </div>
+  <div class="text-center">
+    <ion-button id="btn1" (click)="operaAdd()">+</ion-button>
+    <ion-button id="btn2" (click)="operaMult()">×</ion-button><br/>
+    <ion-button id="btn3" (click)="operaSous()">-</ion-button>
+    <ion-button id="btn4" (click)="operaDiv()">÷</ion-button>
   </div>
 </ion-content>
