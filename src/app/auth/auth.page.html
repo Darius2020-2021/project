@@ -1,0 +1,19 @@
+<header id="img" class="text-end">
+  <a [routerLink]="['/home']"><img src="assets/icon/connection.png" alt=""></a>
+</header>
+<ion-content class="text-center">
+  <div class="in">
+    <input id="in1" type="email" placeholder="Adresse mail" [(ngModel)]="userMail" required><br/>
+    <input id="in2" type="password" placeholder="Password" [(ngModel)]="userMotPasse"required><br/>
+    <input id="in3" type="text" placeholder="Prenom" [(ngModel)]="userName"required><br/>
+    <input id="in4" type="text" placeholder="Nom" [(ngModel)]="userFirstName"required>
+  </div>
+  <div>
+    <p class="text-center fs-2 fw-bold">Votre rôle:</p>
+    <div id="bouton">
+      <button id="btn1" type="submit" class="btn btn-primary" >Professeur</button>
+      <button id="btn2" type="submit" class="btn btn-primary" [routerLink]="['/student']">Etudiant</button>
+    </div>
+  </div>
+
+</ion-content>

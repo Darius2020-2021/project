@@ -1,0 +1,24 @@
+<header>
+  <a [routerLink]="['/auth']"><img id="icon" src="arrow-back-outline.svg" alt=""></a>
+  <a  [routerLink]="['/home']"><img id="img1" src="assets/icon/connection.png" alt=""></a>
+</header>
+
+<ion-content>
+  <div id="fonc" class="text-primary text-center">Etes vous:</div>
+  <div class="text-center">
+    <select name="fonction" id="edu">
+      <option value="fonction">Etudiant</option>
+      <option value="fonction">Responsable</option>
+    </select>
+  </div>
+  <div class="text-primary text-center">Classe:</div>
+  <div class="text-center">
+    <button class="btn btn-primary" [routerLink]="['/ac']">LPIG 1</button>
+    <button class="btn btn-primary">LPIG 2</button>
+    <button class="btn btn-primary">LPIG 3</button>
+    <button class="btn btn-primary">LPIG 4</button>
+    <button class="btn btn-primary">LPIG 5</button>
+    <button class="btn btn-primary">LPIG 6</button>
+  </div>
+
+</ion-content>
