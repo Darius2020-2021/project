@@ -4,23 +4,36 @@ import { AccueillePage } from './accueille.page';
 
 const routes: Routes = [
   {
-    path: 'tabs',
+    path: '',
     component: AccueillePage,
     children: [
       {
         path: 'calender',
         loadChildren: () => import('../calender/calender.module').then( m => m.CalenderPageModule)
       },
+      
+      {
+        path: 'note',
+        loadChildren: () => import('../note/note.module').then( m => m.NotePageModule)
+      },
+      {
+        path:'present',
+        loadChildren: () => import('../present/present.module').then( m => m.PresentPageModule)
+      },
+      {
+        path:'pay',
+        loadChildren: () => import('../pay/pay.module').then( m => m.PayPageModule)
+      },
       {
         path: '',
-        redirectTo: '/tabs/calender',
+        redirectTo: '/ac/calender',
         pathMatch: 'full'
       },
     ]
   },
   {
     path: '',
-    redirectTo: '/tabs/calender',
+    redirectTo: '/ac/calender',
     pathMatch: 'full'
   }
 ];
