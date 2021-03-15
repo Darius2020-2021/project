@@ -1,9 +1,26 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>prof</ion-title>
-  </ion-toolbar>
-</ion-header>
+<header>
+  <a class="text-end" [routerLink]="['/']"><img src="assets/icon/connection.png" alt=""></a>
+</header>
 
 <ion-content>
-
+  <p class="text-primary fs-3 text-center">
+    Professeur de:
+  </p>
+  <select class="form-select" name="Matière" id="mat">
+    <option selected>Matière</option>
+    <optgroup>Informatique</optgroup>
+    <option value="1">Mainenance</option>
+    <option value="2">Architecture d'ordinateur<option>
+    <option value="3">Excel</option>
+    <option value="4">Anglais</option>
+    <option value="5">Français</option>
+    <option value="6">Mathematique</option>
+    <optgroup>Economie</optgroup>
+    <option value="7">Economie</option>
+    <option value="8">Philosophie</option>
+    <option value="9">Comptabilité</option>
+    <option value="10">FRançais</option>
+    <option value="11">Math financière</option>
+  </select>
+  <button class="btn btn-primary" [routerLink]="['/ac']">Confirmer</button>
 </ion-content>

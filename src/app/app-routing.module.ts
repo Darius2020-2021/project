@@ -31,6 +31,18 @@ const routes: Routes = [
     path: 'prof',
     loadChildren: () => import('./prof/prof.module').then( m => m.ProfPageModule)
   },
+  {
+    path: 'note',
+    loadChildren: () => import('./note/note.module').then( m => m.NotePageModule)
+  },
+  {
+    path: 'present',
+    loadChildren: () => import('./present/present.module').then( m => m.PresentPageModule)
+  },
+  {
+    path: 'pay',
+    loadChildren: () => import('./pay/pay.module').then( m => m.PayPageModule)
+  },
 ];
 
 @NgModule({
